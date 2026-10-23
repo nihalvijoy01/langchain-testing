@@ -13,11 +13,11 @@ from langchain_core.messages import AIMessageChunk, ToolMessage
 
 ROOT = Path(__file__).parent.resolve()
 MAX_HEAL_ATTEMPTS = 3
-MODEL_ID = "mistral.mistral-large-3-675b-instruct"  # use your Bedrock model / inference profile ID
+MODEL_ID = "us.anthropic.claude-haiku-4-5-20251001-v1:0"  # use your Bedrock model / inference profile ID
 
 llm = ChatBedrockConverse(
     model=MODEL_ID,
-    region_name="ap-south-1",
+    region_name="us-east-1",
     temperature=0,
     max_tokens=8192,
 )
