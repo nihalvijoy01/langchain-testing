@@ -215,7 +215,7 @@ async def main():
     await check_mcp()
     final = await graph.ainvoke({
         "requirements_path": "requirements/todo.md",
-        "base_url": "https://demo.playwright.dev/todomvc",
+        "base_url": "https://automationexercise.com/",
         "plan_path": "specs/test-plan.md",
         "run_output": "",
         "passed": False,
